@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Evento onload</title><meta charset="utf-8">
+	
+	<script type="text/javascript">
+		
+		function incializar() {
+			var i=document.getElementById('i1');
+			i.ondblclick = function () {i.src='wait.png'};
+			i.onclick    = function () {i.src='scare.png'};
+		}
+	</script>
+</head>
+
+<!-- El arbol DOM ya esta construido al ocurrir onload -->
+<body onload="incializar()">
+
+	<h4>Evento onload</h4>
+
+	<img name="img" src="wait.png" id="i1">
+
+
+</body>
+</html>
