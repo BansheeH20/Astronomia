@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Ejemplo de JavaScript</title>
+</head>
+<body>
+
+	<script language="javascript">
+	var i,x,y,area,c=0;
+	num=parseInt(prompt('Cuantos pares de puntos desea procesar : '));
+	for(i=1;i<=num;i++)
+{
+	x=parseInt(prompt('Ingrese la coordenada x : '));
+	y=parseInt(prompt('Ingrese lacoordenada y : '));
+	if(x>0 && y>0) 
+		document.write('<br>(x,y)=('+x+','+y+') esta en el primer cuadrante');
+	else if(x<0 && y>0)document.write('<br>(x,y)=('+x+','+y+') esta en el segundo cuadrante');
+	else if(x<0 && y<0)document.write('<br>(x,y)=('+x+','+y+') esta en el tercer cuadrante');
+	else
+	document.write('<br>(x,y)=('+x+','+y+') esta en el cuarto cuadrante');
+}
+
+document.write('<br><br>La cantidad de triangulos su superficie es mayor que 12 es  = '+c);
+</script>
+</body>
+</html>
